@@ -21,6 +21,8 @@ Example project also contains usage samples.
 
 I believe generator should be responsible for content only, thus in case you want to mask content with circle (or pretty much any shape you want), please consider `mask` layer of your `UIImageView`.
 
+See example project to view actual sample.
+
 ## Caching
 
 `CDFInitialsAvatar` **does not** cache images it generates. Consider implementing your choice of image caching strategy when using it inside a cell views or in similar cases. In short, treat `imageView.image = initialsAvatar.imageRepresentation` as a very expensive call (which it is).

@@ -50,17 +50,26 @@
     CDFInitialsAvatar *topLeftAvatar = [[CDFInitialsAvatar alloc] initWithRect:self.topLeft.bounds fullName:self.nameField.text];
     self.topLeft.image = topLeftAvatar.imageRepresentation;
     
+    
     CDFInitialsAvatar *topRightAvatar = [[CDFInitialsAvatar alloc] initWithRect:self.topLeft.bounds fullName:self.nameField.text];
     topRightAvatar.backgroundColor = [UIColor colorWithRed:0.843 green:0.788 blue:0.667 alpha:1]; // custom background color
+    CALayer *mask = [CALayer layer]; // this will become a mask for UIImageView
+    UIImage *maskImage = [UIImage imageNamed:@"AvatarMask"]; // circle, in this case
+    mask.contents = (id)[maskImage CGImage];
+    mask.frame = self.topLeft.bounds;
+    self.topRight.layer.mask = mask;
+    self.topRight.layer.masksToBounds = YES;
     self.topRight.image = topRightAvatar.imageRepresentation;
+    
     
     CDFInitialsAvatar *bottomLeftAvatar = [[CDFInitialsAvatar alloc] initWithRect:self.topLeft.bounds fullName:self.nameField.text];
     bottomLeftAvatar.backgroundColor = [UIColor colorWithRed:0.941 green:0.58 blue:0.341 alpha:1]; // custom background color
     bottomLeftAvatar.initialsColor = [UIColor colorWithRed:0.965 green:0.973 blue:0.875 alpha:1]; // custom text color
     self.bottomLeft.image = bottomLeftAvatar.imageRepresentation;
     
+    
     CDFInitialsAvatar *bottomRightAvatar = [[CDFInitialsAvatar alloc] initWithRect:self.topLeft.bounds fullName:self.nameField.text];
-    bottomRightAvatar.initialsFont = [UIFont fontWithName:@"MarkerFelt-Thin" size:40.0]; // cutom font and font size, for more info see FAQ in README
+    bottomRightAvatar.initialsFont = [UIFont fontWithName:@"MarkerFelt-Thin" size:40.0]; // custom font and font size, for more info see FAQ in README
     self.bottomRight.image = bottomRightAvatar.imageRepresentation;
     
     
