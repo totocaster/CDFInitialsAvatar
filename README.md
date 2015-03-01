@@ -7,8 +7,8 @@ Simple to use initials avatar generator for iOS. Highly customizable, but with s
 Defaults mimic look of Apple's own implementation of initial avatars, found in  Contact.app and Messages.app on iPhone or OS X. Thus, usage can be as simple those who lines:
 
 ```objc
-	CDFInitialsAvatar *initialsAvatar = [[CDFInitialsAvatar alloc] initWithRect imageView.bounds fullName:@"Toto Tvalavadze"];
-	imageView.image = initialsAvatar.imageRepresentation; // actual drawing happens here
+CDFInitialsAvatar *initialsAvatar = [[CDFInitialsAvatar alloc] initWithRect imageView.bounds fullName:@"Toto Tvalavadze"];
+imageView.image = initialsAvatar.imageRepresentation; // actual drawing happens here
 ```
 
 ### Further Customizations
