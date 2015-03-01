@@ -1,6 +1,6 @@
 # CDFInitialsAvatar
 
-Simple to use initials avatar generator for iOS. Highly customizable, but with sane defaults. Work great as a avatar placeholder and such.
+Simple to use initials avatar generator for iOS. Highly customizable, but with sane defaults. Works great as a avatar placeholder till network image is loaded or as an actual image if user has no avatar at all.
 
 ## Usage
 
