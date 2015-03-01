@@ -2,6 +2,8 @@
 
 Simple to use initials avatar generator for iOS. Highly customizable, but with sane defaults. Works great as a avatar placeholder till network image is loaded or as an actual image if user has no avatar at all.
 
+![Sample Image](http://totocaster.s3.amazonaws.com/public/cdfinitialsavatar_sample_screen.png)
+
 ## Usage
 
 Defaults mimic look of Apple's own implementation of initial avatars, found in  Contact.app and Messages.app on iPhone or OS X. Thus, usage can be as simple those who lines:
