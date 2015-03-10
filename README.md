@@ -6,7 +6,7 @@ Simple to use initials avatar generator for iOS. Highly customizable, but with s
 
 ## Usage
 
-Defaults mimic look of Apple's own implementation of initial avatars, found in  Contact.app and Messages.app on iPhone or OS X. Thus, usage can be as simple those who lines:
+Defaults mimic look of Apple's own implementation of initial avatars, found in  Contact.app and Messages.app on iPhone or OS X. Usage can be as simple those two lines:
 
 ```objc
 CDFInitialsAvatar *initialsAvatar = [[CDFInitialsAvatar alloc] initWithRect: imageView.bounds fullName:@"Toto Tvalavadze"];
@@ -15,13 +15,13 @@ imageView.image = initialsAvatar.imageRepresentation; // actual drawing happens 
 
 ### Further Customizations
 
-You are free to change `backgroundColor`, `initilasFont` and `initialsColor`. This should cover everything. For details, refer to header file. It's well documented.
+You can change `backgroundColor`, `initilasFont` and `initialsColor`. This should cover everything. For details, refer to header file. It's well documented.
 
 Example project also contains usage samples.
 
 ### What About Circle Avatars?
 
-I believe generator should be responsible for content only, thus in case you want to mask content with circle (or pretty much any shape you want), please consider `mask` layer of your `UIImageView`.
+I believe generator should be responsible for content only, thus in case you want to mask content with circle (or pretty much any shape), please consider `mask` layer of your `UIImageView`.
 
 See example project to view actual sample.
 
