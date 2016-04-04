@@ -15,7 +15,7 @@ imageView.image = initialsAvatar.imageRepresentation; // actual drawing happens 
 
 ### Further Customizations
 
-You can change `backgroundColor`, `initilasFont` and `initialsColor`. This should cover everything. For details, refer to header file. It's well documented.
+You can change `backgroundColor`, `initialsFont` and `initialsColor`. This should cover everything. For details, refer to header file. It's well documented.
 
 Example project also contains usage samples.
 
