@@ -90,7 +90,10 @@
     [initials drawInRect: CGRectMake(CGRectGetMinX(initialsStringRect), CGRectGetMinY(initialsStringRect) + (CGRectGetHeight(initialsStringRect) - initialsStringTextHeight) / 2, CGRectGetWidth(initialsStringRect), initialsStringTextHeight) withAttributes: initialsStringFontAttributes];
     CGContextRestoreGState(context);
 
-    return UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 
 
